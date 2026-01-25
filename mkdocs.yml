@@ -1,1 +1,22 @@
-site_name: My Docs
+site_name: Ahmed's Second Brain
+site_author: Ahmed Bay
+copyright: Copyright &copy; 2026 Ahmed Bay
+site_url: https://itsbayahmed.github.io/
+repo_url: https://github.com/itsbayahmed/itsbayahmed.github.io
+edit_uri: edit/main/docs
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+    accent: purple
+  features:
+    - navigation.expand
+    - content.code.copy
+nav:
+  - Home: index.md
+  - 'Linux Ricing':
+    - 'Fedora Setup': linux/fedora-after-install.md
+
+
