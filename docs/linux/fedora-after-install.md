@@ -24,6 +24,6 @@
 > flatpak install flathub md.obsidian.Obsidian
 
 5. ### Install Geary email client:
-> sudo dnf install Geary
+> sudo dnf install geary
 
 
