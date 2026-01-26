@@ -10,9 +10,9 @@ theme:
   palette:
   # Light Mode Setting
    - scheme: default
-    primary: teal
-    accent: purple
-    toggle:
+     primary: teal
+     accent: purple
+     toggle:
       icon: material/brightness-7
       name: Switch to dark mode
   # Dark Mode Setting
