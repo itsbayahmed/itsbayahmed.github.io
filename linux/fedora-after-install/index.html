@@ -392,7 +392,7 @@
   <a href="#gnome-tweaks-to-add-maximize-and-minimize-buttons-to-the-apps-window" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gnome Tweaks to add maximize and minimize buttons to the apps window:
+        GNOME Tweaks to add maximize and minimize buttons to the apps window:
       
     </span>
   </a>
@@ -400,10 +400,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#adw-gtk3-to-make-gtk-3-apps-look-like-gtk-4-libadwaita-apps" class="md-nav__link">
+  <a href="#adw-gtk3-to-make-gtk-3-apps-consistent-with-gtk-4-libadwaita-apps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adw-gtk3 to make GTK 3 apps look like GTK 4/ Libadwaita apps:
+        Adw-gtk3 to make GTK 3 apps consistent with GTK 4/ Libadwaita apps:
       
     </span>
   </a>
@@ -411,10 +411,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#brave-web-browser" class="md-nav__link">
+  <a href="#brave-web-browser-secure-private-by-design" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Brave Web Browser:
+        Brave Web Browser: Secure &amp; Private by Design
       
     </span>
   </a>
@@ -433,10 +433,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-geary-email-client" class="md-nav__link">
+  <a href="#geary-lightweight-gnome-email-client" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install Geary email client:
+        Geary: Lightweight GNOME Email Client
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gnome-extension-manager-the-best-way-to-browse-install-and-manage-gnome-shell-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gnome Extension Manager: The Best Way to Browse, Install and Manage GNOME Shell Extensions
       
     </span>
   </a>
@@ -517,7 +528,7 @@
   <a href="#gnome-tweaks-to-add-maximize-and-minimize-buttons-to-the-apps-window" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Gnome Tweaks to add maximize and minimize buttons to the apps window:
+        GNOME Tweaks to add maximize and minimize buttons to the apps window:
       
     </span>
   </a>
@@ -525,10 +536,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#adw-gtk3-to-make-gtk-3-apps-look-like-gtk-4-libadwaita-apps" class="md-nav__link">
+  <a href="#adw-gtk3-to-make-gtk-3-apps-consistent-with-gtk-4-libadwaita-apps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adw-gtk3 to make GTK 3 apps look like GTK 4/ Libadwaita apps:
+        Adw-gtk3 to make GTK 3 apps consistent with GTK 4/ Libadwaita apps:
       
     </span>
   </a>
@@ -536,10 +547,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#brave-web-browser" class="md-nav__link">
+  <a href="#brave-web-browser-secure-private-by-design" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Brave Web Browser:
+        Brave Web Browser: Secure &amp; Private by Design
       
     </span>
   </a>
@@ -558,10 +569,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-geary-email-client" class="md-nav__link">
+  <a href="#geary-lightweight-gnome-email-client" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install Geary email client:
+        Geary: Lightweight GNOME Email Client
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gnome-extension-manager-the-best-way-to-browse-install-and-manage-gnome-shell-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gnome Extension Manager: The Best Way to Browse, Install and Manage GNOME Shell Extensions
       
     </span>
   </a>
@@ -595,50 +617,71 @@
 
 <h1 id="things-i-do-after-installing-fedora-workstation">Things I Do After Installing Fedora Workstation:</h1>
 <h2 id="updating-the-system">Updating the system:</h2>
-<blockquote>
-<p>sudo dnf upgrade --refresh -y</p>
-</blockquote>
+<pre><code class="language-bash">sudo dnf upgrade --refresh -y
+</code></pre>
 <h2 id="installing-some-useful-missing-apps">Installing some useful missing apps:</h2>
-<ol>
-<li>
-<h3 id="gnome-tweaks-to-add-maximize-and-minimize-buttons-to-the-apps-window">Gnome Tweaks to add <em>maximize</em> and <em>minimize</em> buttons to the apps window:</h3>
-</li>
-</ol>
+<h3 id="gnome-tweaks-to-add-maximize-and-minimize-buttons-to-the-apps-window">GNOME Tweaks to add <em>maximize</em> and <em>minimize</em> buttons to the apps window:</h3>
+<pre><code class="language-bash"> sudo dnf install gnome-tweaks
+</code></pre>
 <blockquote>
-<p>sudo dnf install gnome-tweaks</p>
+<p>[!TIP]  How to:
+open  Gnome Tweaks, then go to <em>Windows</em> --&gt; <em>Titlebar Buttons</em>, and switch on <strong>Maximize</strong> and <strong>Minimize</strong>.</p>
+</blockquote>
+<h3 id="adw-gtk3-to-make-gtk-3-apps-consistent-with-gtk-4-libadwaita-apps"><a href="https://github.com/lassekongo83/adw-gtk3">Adw-gtk3</a> to make GTK 3 apps consistent with GTK 4/ Libadwaita apps:</h3>
+<pre><code class="language-bash"> sudo dnf install adw-gtk3-theme
+</code></pre>
+<blockquote>
+<p>[!TIP]  How to:
+open  GNOME Tweaks, then go to <em>Appearance</em>  --&gt; <em>Styles</em>  --&gt; <em>Legacy Applications</em> ,  and select <strong>Adw-gtk3</strong> or <strong>Adw-gtk3-dark</strong> from the menu.</p>
+</blockquote>
+<h3 id="brave-web-browser-secure-private-by-design"><a href="https://brave.com/">Brave</a> Web Browser: Secure &amp; Private by Design</h3>
+<ol>
+<li>Install the core plugins to enable the 'config-manager' command:</li>
+</ol>
+<pre><code class="language-bash">sudo dnf install dnf-plugins-core
+</code></pre>
+<blockquote>
+<p>[!INFO] What is config-manager?
+<strong>config-manager</strong> is a <strong>DNF</strong> plugin that simplifies adding, enabling, disabling, and removing repositories via command-line commands.</p>
 </blockquote>
 <ol>
-<li>
-<h3 id="adw-gtk3-to-make-gtk-3-apps-look-like-gtk-4-libadwaita-apps"><a href="https://github.com/lassekongo83/adw-gtk3">Adw-gtk3</a> to make GTK 3 apps look like GTK 4/ Libadwaita apps:</h3>
-</li>
+<li>Add the official Brave repository so that DNF can find the package:</li>
 </ol>
-<blockquote>
-<p>sudo dnf install adw-gtk3-theme</p>
-</blockquote>
+<pre><code class="language-bash">sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+</code></pre>
 <ol>
-<li>
-<h3 id="brave-web-browser"><a href="https://brave.com/">Brave</a> Web Browser:</h3>
-</li>
+<li>Install Brave Browser:</li>
 </ol>
+<pre><code class="language-bash">sudo dnf install brave-browser
+</code></pre>
 <blockquote>
-<p>curl -fsS https://dl.brave.com/install.sh | sh </p>
+<p>[!QUESTION] Why add the Brave repository?
+Installing via the official repository ensures your browser updates automatically alongside your system updates, keeping your browser secure and up-to-date.</p>
 </blockquote>
-<ol>
-<li>
 <h3 id="obsidian-the-best-note-taking-app"><a href="https://obsidian.md/">Obsidian</a>: The Best Note taking App</h3>
-</li>
-</ol>
-<blockquote>
-<p>flatpak install flathub md.obsidian.Obsidian</p>
-</blockquote>
 <ol>
-<li>
-<h3 id="install-geary-email-client">Install Geary email client:</h3>
-<blockquote>
-<p>sudo dnf install geary</p>
-</blockquote>
-</li>
+<li>Ensure <strong>Flathub</strong> repository is enabled:</li>
 </ol>
+<pre><code class="language-bash">flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+</code></pre>
+<ol>
+<li>Install Obsidian</li>
+</ol>
+<pre><code class="language-bash">flatpak install flathub md.obsidian.Obsidian
+</code></pre>
+<h3 id="geary-lightweight-gnome-email-client"><a href="https://gitlab.gnome.org/GNOME/geary">Geary</a>: Lightweight GNOME Email Client</h3>
+<pre><code class="language-bash">sudo dnf install geary
+</code></pre>
+<h3 id="gnome-extension-manager-the-best-way-to-browse-install-and-manage-gnome-shell-extensions"><a href="https://mattjakeman.com/apps/extension-manager">Gnome Extension Manager</a>: The Best Way to Browse, Install and Manage GNOME Shell Extensions</h3>
+<pre><code class="language-bash">flatpak install com.mattjakeman.ExtensionManager
+
+</code></pre>
+<p>List of extensions I use:
+-  <strong><a href="https://github.com/ubuntu/gnome-shell-extension-appindicator">AppIndicator and KStatusNotifierItem Support</a>:</strong> Adds  system tray icons support to the top panel.
+- <strong><a href="https://github.com/GSConnect/gnome-shell-extension-gsconnect/wiki">GSConnect</a>:</strong> To get notifications from my Android phone, share clipboard between my phone and my computer, and remote control my PC from my phone.
+-  <strong><a href="https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator">Clipboard Manager</a>:</strong> Like its name says, a clipboard manager for GNOME (saves text you copy so you don't lose it).
+- <strong><a href="https://gitlab.com/smedius/desktop-icons-ng">Gtk4 Desktop Icons NG (DING)</a>:</strong> Allows me adding my files and apps to the desktop. 
+- <strong><a href="https://github.com/Leleat/Tiling-Assistant">Tiling Assistant</a>:</strong> Brings Windows 11 style Snap Assistant to GNOME.</p>
 
 
 
