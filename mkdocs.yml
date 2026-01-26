@@ -8,15 +8,15 @@ edit_uri: edit/main/docs
 theme:
   name: material
   palette:
-  # Light Mode Setting
-   - scheme: default
+    # Light Mode Setting
+    - scheme: default
      primary: teal
      accent: purple
      toggle:
       icon: material/brightness-7
       name: Switch to dark mode
-  # Dark Mode Setting
-  - scheme: slate
+    # Dark Mode Setting
+    - scheme: slate
     primary: teal
     accent: purple
     toggle:
