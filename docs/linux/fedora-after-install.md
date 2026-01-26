@@ -74,6 +74,8 @@ flatpak install com.mattjakeman.ExtensionManager
 ```
 
 List of extensions I use:
+
+
 -  **[AppIndicator and KStatusNotifierItem Support](https://github.com/ubuntu/gnome-shell-extension-appindicator):** Adds  system tray icons support to the top panel.
 - **[GSConnect](https://github.com/GSConnect/gnome-shell-extension-gsconnect/wiki):** To get notifications from my Android phone, share clipboard between my phone and my computer, and remote control my PC from my phone.
 -  **[Clipboard Manager](https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator):** Like its name says, a clipboard manager for GNOME (saves text you copy so you don't lose it).
