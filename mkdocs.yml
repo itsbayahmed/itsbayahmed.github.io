@@ -1,34 +1,83 @@
+# Site title shown in the browser tab and header
 site_name: Ahmed's Second Brain
+
+# Author name used in metadata
 site_author: Ahmed Bay
+
+# Footer copyright notice
 copyright: Copyright &copy; 2026 Ahmed Bay
+
+# Canonical URL of the site (important for SEO and GitHub Pages)
 site_url: https://itsbayahmed.github.io/
+
+# Repository URL shown in the top-right corner
 repo_url: https://github.com/itsbayahmed/itsbayahmed.github.io
+
+# Path used for the "Edit this page" link
 edit_uri: edit/main/docs
 
 theme:
+
+  # Use the Material theme for MkDocs
   name: material
   palette:
-    # Light Mode Setting
+    
+    # Light Mode configuration
     - scheme: default
-      primary: teal
-      accent: purple
+      primary: white
+      accent: deep purple
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Switch to dark mode
-    # Dark Mode Setting
+    
+    # Dark Mode configuration
     - scheme: slate
-      primary: teal
-      accent: purple
+      primary: black
+      accent: deep purple
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Switch to light mode
-
+  
+  # Font configuration
+  font:
+    text: Inter              # Main text font
+    code: JetBrains Mono     # Font used for code blocks
+  
+  # Enable selected Material features
   features:
-    - navigation.expand
-    - content.code.copy
+    - navigation.tabs           # Top-level navigation tabs     
+    - navigation.tabs.sticky    # Keep tabs visible while scrolling
+    - navigation.sections       # Group pages into collapsible sections
+    - content.code.copy         # Add "copy" button to code blocks
+    - toc.follow                # Table of contents follows scroll
+ 
+# Markdown extensions to enhance writing and formatting
+markdown_extensions:
+- admonition                    # Adds styled callout blocks (note, warning, tip, etc.)
+- pymdownx.details              # Collapsible sections
+- pymdownx.superfences          # Advanced fenced code blocks with custom styling, and enhanced formatting
+- pymdownx.tabbed:              # Tabbed content blocks
+    alternate_style: true
+- pymdownx.inlinehilite         # Highlights inline code snippets with syntax colors for better readability
+
+# Additional custom CSS files
+extra_css:
+  - stylesheets/extra.css
+
+# Extra configuration (theme extensions, metadata, integrations)  
+extra:
+
+  # Social media links shown in the header/footer
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/itsbayahmed
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/bahmed_dev
+    - icon: fontawesome/solid/envelope
+      link: mailto:bayahmed@proton.me
+      
+# Navigation structure (logical structure, not file structure)
 nav:
   - Home: index.md
-  - 'Linux Ricing':
+  - 'Linux':
     - 'Fedora Setup': linux/fedora-after-install.md
-
-
