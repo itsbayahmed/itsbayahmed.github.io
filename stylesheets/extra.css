@@ -1,0 +1,28 @@
+:root {
+  /* Sets the main text font for the entire site to Inter */
+  --md-text-font: "Inter";
+
+  /* Sets the monospace font used for code blocks to JetBrains*/
+  --md-code-font: "JetBrains Mono";
+}
+
+.md-grid {
+  /* Limits the maximum width of the content area
+     to keep text readable on large screens */
+  max-width: 1200px;
+}
+
+img {
+  /* Adds slightly rounded corners to images */
+  border-radius: 8px;
+
+  /* Applies a soft shadow to give images subtle depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.md-typeset pre > code {
+  /* Rounds the corners of code blocks
+     for visual consistency with other elements */
+  border-radius: 6px;
+}
+
