@@ -1,1 +1,12 @@
+# --- Build Output ---
+site/
+
+# --- Python & Environments ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.cache/
+
+# --- Obsidian ---
 .obsidian/

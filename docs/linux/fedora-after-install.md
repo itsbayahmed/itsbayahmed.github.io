@@ -1,24 +1,28 @@
+---
+icon: simple/fedora
+---
 # Things I Do After Installing Fedora Workstation:
 
 
-## Updating the system:
+##  :fontawesome-solid-arrows-rotate:&ensp;   Updating the system:
 
 ```bash
 sudo dnf upgrade --refresh -y
 ```
 
-## Installing some useful missing apps:
+## :fontawesome-solid-store:&ensp;  Installing some useful missing apps:
+<br>
 
-### [GNOME Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks) to add *maximize* and *minimize* buttons to the apps window:
+###  :fontawesome-regular-window-restore:&ensp; [GNOME Tweaks](https://gitlab.gnome.org/GNOME/gnome-tweaks) to add *maximize* and *minimize* buttons to the apps window:
 
 ```bash
  sudo dnf install gnome-tweaks
 ```
 
 !!! tip "How to:"
-    open  Gnome Tweaks, then go to *Windows* --> *Titlebar Buttons*, and switch on **Maximize** and **Minimize**.
+    open  GNOME Tweaks, then go to *Windows* --> *Titlebar Buttons*, and switch on **Maximize** and **Minimize**.
 
-### [Adw-gtk3](https://github.com/lassekongo83/adw-gtk3) to make GTK 3 apps consistent with GTK 4/ Libadwaita apps:
+### :octicons-paintbrush-24:&ensp; [Adw-gtk3](https://github.com/lassekongo83/adw-gtk3) to make GTK 3 apps consistent with GTK 4/ Libadwaita apps:
 
 ```bash
  sudo dnf install adw-gtk3-theme
@@ -28,7 +32,7 @@ sudo dnf upgrade --refresh -y
 !!! tip "How to:"
     open  GNOME Tweaks, then go to *Appearance*  --> *Styles*  --> *Legacy Applications* ,  and select **Adw-gtk3** or **Adw-gtk3-dark** from the menu.
 
-### [Brave](https://brave.com/) Web Browser: Secure & Private by Design
+### :fontawesome-brands-brave:&ensp; [Brave](https://brave.com/) Web Browser: Secure & Private by Design
 !!! info "What is config-manager?"
     **config-manager** is a **DNF** plugin that simplifies adding, enabling, disabling, and removing repositories via command-line commands.
 1.  Install the core plugins to enable the 'config-manager' command:
@@ -49,7 +53,7 @@ sudo dnf install brave-browser
 !!! question "Why add the Brave repository?"
     Installing via the official repository ensures your browser updates automatically alongside your system updates, keeping your browser secure and up-to-date.
 
-### Install Codecs and Microsoft Fonts
+### :fontawesome-regular-file-video:&ensp; Install Codecs and Microsoft Fonts
 Fedora includes only open-source licenses software in their official repositories, and it doesn’t ship with proprietary codecs (needed for MP 3 audio or MP 4/H.264 video playback) or Microsoft fonts by default. 
 
 To fix that, we need add the **RPM Fusion** repositories first, then we could easily install the needed codecs and fonts:
@@ -71,6 +75,12 @@ Fedora uses the OpenH264 library by default for web video (like WebRTC), but the
 ```bash
 sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
 ```   
+
+Then use the following command to install the openH264 library:
+```bash
+sudo dnf install gstreamer1-plugin-openh264 mozilla-openh264
+```
+
 3. **Enable GUI Support (AppStream):**
 By default, enabling RPM Fusion makes packages available in the terminal (`dnf`). To make them appear in graphical stores like **GNOME Software** or **KDE Discover** (with icons, screenshots, and descriptions), you need to install the AppStream metadata.
 
@@ -104,7 +114,7 @@ sudo dnf install intel-media-driver
 ```bash
 sudo dnf install curl cabextract xorg-x11-font-utils fontconfig; sudo rpm -ivh --nodigest --nofiledigest https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm 
 ```
-### [Obsidian](https://obsidian.md/): The Best Note taking App
+### :octicons-note-24:&ensp; [Obsidian](https://obsidian.md/): The Best Note Taking App
 1. Ensure **Flathub** repository is enabled:
 
 ```bash
@@ -115,12 +125,12 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install flathub md.obsidian.Obsidian
 ```
 
-### [Geary](https://gitlab.gnome.org/GNOME/geary): Lightweight GNOME Email Client
+### :octicons-mail-24:&ensp; [Geary](https://gitlab.gnome.org/GNOME/geary): Lightweight GNOME Email Client
 ```bash
 sudo dnf install geary
 ```
 
-### [Gnome Extension Manager](https://mattjakeman.com/apps/extension-manager): The Best Way to Browse, Install and Manage GNOME Shell Extensions
+### :fontawesome-solid-expand-alt:&ensp;  [Gnome Extension Manager](https://mattjakeman.com/apps/extension-manager): The Best Way to Browse, Install and Manage GNOME Shell Extensions
 ```bash
 flatpak install com.mattjakeman.ExtensionManager
 
@@ -136,7 +146,7 @@ List of extensions I use:
 - **[Tiling Assistant](https://github.com/Leleat/Tiling-Assistant):** Brings Windows 11 style Snap Assistant to GNOME.
 - **[Fedora Linux Update Indicator](https://github.com/purejava/fedora-update):** To get a  notification when new system updates are available.
 
-### Install Visual Studio Code
+### :octicons-vscode-32:&ensp;Install Visual Studio Code
 1.  import The Microsoft GPG key:
 ```bash
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
