@@ -68,3 +68,14 @@ After that, use the following command to install OnlyOffice:
 sudo apt update && sudo apt install onlyoffice-desktopeditors -y
 ```
 
+## Install build-essential:
+build-essential is a software package that includes essential tools for building and compiling software in Linux. It provides a set of basic development tools such as compilers (gcc, g++), the make utility, and other necessary libraries.
+```bash
+sudo apt install build-essential
+```
+
+## Install  git, a version control system:
+git is the version control  system  I use for tracking changes in source code during software development.  unfortunately does not come pre-installed with Linux Mint (just like Ubuntu), but it  is can be installed easily using this command:
+```bash
+sudo apt install git
+```
